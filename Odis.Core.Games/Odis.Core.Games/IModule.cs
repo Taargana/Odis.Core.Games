@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Odis.Core.Games
 {
@@ -11,5 +12,10 @@ namespace Odis.Core.Games
         /// All the entities of the module
         /// </summary>
         IEnumerable<IEntity> Entities { get; }
+
+        /// <summary>
+        /// All scripts that module uses
+        /// </summary>
+        IEnumerable<KeyValuePair<String, String>> Scripts { get; }
     }
 }

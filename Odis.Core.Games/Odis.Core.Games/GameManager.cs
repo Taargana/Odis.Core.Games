@@ -31,6 +31,9 @@ namespace Odis.Core.Games
         /// </summary>
         public List<IGameManagerComponent> GameManagerComponent { get; private set; }
 
+        [Import(typeof(IScriptManager))]
+        public IScriptManager ScriptManager { get; set; }
+
         /// <summary>
         /// Current Game Manager
         /// </summary>
@@ -57,6 +60,10 @@ namespace Odis.Core.Games
 
             foreach (IModule module in Modules)
             {
+                foreach (KeyValuePair<String, String> script in module.Scripts)
+                {
+                    ScriptManager.ScriptCollection.Add(script.Key, script.Value);
+                }
                 gameServer.CurrentGame.AddRangeEntities(module.Entities.ToArray());
             }
 

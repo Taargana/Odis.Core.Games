@@ -1,27 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
+using Odis.Core.Games;
 
-namespace Odis.Core.Games.Communication
+namespace CineTycoon.Server.GameApplication
 {
-    /// <summary>
-    /// This Module exposes communication Entity
-    /// </summary>
     [Export(typeof(IModule))]
-    public class CommunicationModule : IModule
+    public class GameApplicationModule : IModule
     {
         public void Initialize()
         {
         }
 
-        /// <summary>
-        /// All the entities of the module
-        /// </summary>
         public IEnumerable<IEntity> Entities
         {
             get
             {
-                yield return new SocketEntity("DefaultSocket").AddComponent(new SocketComponent());
+                yield return new Entity("X-Wing");
             }
         }
 
