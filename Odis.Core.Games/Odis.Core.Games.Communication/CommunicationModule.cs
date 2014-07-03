@@ -21,7 +21,8 @@ namespace Odis.Core.Games.Communication
         {
             get
             {
-                yield return new SocketEntity("DefaultSocket").AddComponent(new SocketComponent());
+                yield return new SocketEntity("DefaultSocket", 8587).AddComponent(new SocketComponent());
+                yield return new SocketEntity("DefaultWebSocket").AddComponent(new WebSocketComponent());
             }
         }
 

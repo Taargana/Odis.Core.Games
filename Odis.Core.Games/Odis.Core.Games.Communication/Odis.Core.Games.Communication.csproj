@@ -45,6 +45,7 @@
     <Compile Include="SocketComponent.cs" />
     <Compile Include="SocketEntity.cs" />
     <Compile Include="SocketState.cs" />
+    <Compile Include="WebSocketComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Odis.Core.Games\Odis.Core.Games.csproj">
