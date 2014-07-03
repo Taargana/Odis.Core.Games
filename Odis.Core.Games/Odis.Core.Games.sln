@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odis.Core.Games.Communicati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odis.Core.Games.Script", "Odis.Core.Games.Script\Odis.Core.Games.Script.csproj", "{B8D06844-08E6-44D4-AE69-FD840FE58F48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odis.Core.Games.Nuget", "Odis.Core.Games.Nuget\Odis.Core.Games.Nuget.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B8D06844-08E6-44D4-AE69-FD840FE58F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8D06844-08E6-44D4-AE69-FD840FE58F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8D06844-08E6-44D4-AE69-FD840FE58F48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
