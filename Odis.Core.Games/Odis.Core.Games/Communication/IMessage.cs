@@ -16,8 +16,8 @@ namespace Odis.Core.Games.Communication
     /// <summary>
     /// Generic Message
     /// </summary>
-    /// <typeparam name="T"></typeparam>
-    public interface IMessage<T> : IMessage
+    /// <typeparam name="T">the type of the content of the message</typeparam>
+    public interface IMessage<out T> : IMessage where T : class, new()
     {
         /// <summary>
         /// Strong typed message dataItem

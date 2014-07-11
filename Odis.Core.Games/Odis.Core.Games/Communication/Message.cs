@@ -5,6 +5,7 @@ namespace Odis.Core.Games.Communication
     /// <summary>
     /// tcp/ip message
     /// </summary>
+    [Serializable]
     public class Message : IMessage
     {
         /// <summary>
