@@ -15,7 +15,8 @@
         /// </summary>
         /// <param name="entityName"></param>
         /// <param name="port"></param>
-        public SocketEntity(string entityName, int port = 8586) : base(entityName)
+        public SocketEntity(string entityName, int port)
+            : base(entityName)
         {
             Port = port;
         }

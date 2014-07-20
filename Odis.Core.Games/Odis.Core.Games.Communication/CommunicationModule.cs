@@ -21,8 +21,9 @@ namespace Odis.Core.Games.Communication
         {
             get
             {
-                yield return new SocketEntity("DefaultSocket", 8587).AddComponent(new SocketComponent());
-                yield return new SocketEntity("DefaultWebSocket").AddComponent(new WebSocketComponent());
+                //Todo do something when configuration port doesn't exist
+                yield return new SocketEntity("DefaultSocket", Configuration.Ports["DefaultSocket"]).AddComponent(new SocketComponent());
+                yield return new SocketEntity("DefaultWebSocket", Configuration.Ports["DefaultWebSocket"]).AddComponent(new WebSocketComponent());
             }
         }
 

@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Odis.Core.Games.Nuget</id>
-    <version>1.0.5</version>
+    <version>1.0.10</version>
     <title>Odis.Core.Games</title>
     <authors>Yann</authors>
     <owners></owners>
@@ -12,7 +12,7 @@
     <releaseNotes>
     </releaseNotes>
     <summary>
-      Odi core engine
+      Odis core engine
     </summary>
     <language>en-US</language>
     <projectUrl>https://nuget.org/packages/Odis.Core.Games.Nuget</projectUrl>
